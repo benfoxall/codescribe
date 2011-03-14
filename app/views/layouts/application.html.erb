@@ -7,8 +7,23 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+	<p class="beta">
+		<a href="http://codescri.be">codescri.be</a> is still under development &mdash; all uploaded content is likely to be deleted at some point
+	</p>
 
-<%= yield %>
+	<p class="twitter">
+		<% if current_user %>
+		  <%= current_user.name %>
+		  <%= link_to "×", signout_path %>
+		<% else %>
+		  <%= link_to "Sign in", "/auth/twitter" %>
+		<% end %>
+	</p>
+	
+	<div id="container">
+		
+	<%= yield %>
 
+	</div>
 </body>
 </html>
