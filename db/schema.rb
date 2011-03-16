@@ -10,7 +10,34 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110314231238) do
+ActiveRecord::Schema.define(:version => 20110316194904) do
+
+  create_table "codes", :force => true do |t|
+    t.text     "src"
+    t.text     "html"
+    t.string   "lang"
+    t.string   "hash"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "links", :force => true do |t|
+    t.integer  "note_id"
+    t.integer  "start_line"
+    t.integer  "end_line"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "notes", :force => true do |t|
+    t.text     "src"
+    t.text     "html"
+    t.integer  "user_id"
+    t.integer  "code_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "provider"

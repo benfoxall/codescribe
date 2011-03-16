@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  note_id: 1
+  start_line: 1
+  end_line: 1
+
+two:
+  note_id: 1
+  start_line: 1
+  end_line: 1
