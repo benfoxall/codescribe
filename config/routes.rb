@@ -1,5 +1,7 @@
 Codescribe::Application.routes.draw do
-  
+
+  resources :codes, :only => [:new, :show, :create]
+
   root :to => 'site#home'
 
   match "/auth/:provider/callback" => "sessions#create"
