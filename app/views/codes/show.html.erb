@@ -1,1 +1,5 @@
-<code><%= @code.src %></code>
+<code>
+<% @code.src.split("\r\n").each_with_index do |line,number| %>
+<span class="line"><span class="number"><%= number %></span><%= line %>&nbsp;</span>
+<% end %>
+</code>

@@ -49,6 +49,21 @@ code{
 	border-left:4px solid #08f;
 	background-color:#f8f8f8;
 	padding:1em;
-	white-space:pre;
 	font-family: monospace;
+}
+.line{
+	display:block;
+	white-space:pre;
+	padding:.2em;
+}
+.line:hover{
+	background-color:#eee;
+}
+.line .number{
+	text-align:right;
+	display:block;
+	float:left;
+	width:2em;
+	margin-right:1em;
+	color:#888;
 }
