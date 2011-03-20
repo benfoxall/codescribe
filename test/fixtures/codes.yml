@@ -4,12 +4,12 @@ one:
   src: MyText
   html: MyText
   lang: MyString
-  hash: MyString
+  src_hash: MyString
   user_id: 1
 
 two:
   src: MyText
   html: MyText
   lang: MyString
-  hash: MyString
+  src_hash: MyString
   user_id: 1

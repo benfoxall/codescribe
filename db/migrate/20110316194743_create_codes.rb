@@ -4,7 +4,7 @@ class CreateCodes < ActiveRecord::Migration
       t.text :src
       t.text :html
       t.string :lang
-      t.string :hash
+      t.string :src_hash
       t.integer :user_id
 
       t.timestamps

@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(:version => 20110316194904) do
     t.text     "src"
     t.text     "html"
     t.string   "lang"
-    t.string   "hash"
+    t.string   "src_hash"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
