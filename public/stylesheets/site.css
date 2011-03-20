@@ -42,9 +42,10 @@ textarea, input{
 	border: 1px solid #ccc;
 	background-color:#fdfdfd;
 	border-radius:.2em;
-	font: .7em "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	font: .7em helvetica, arial, sans-serif;
 }
 code{
+	font-size:.75em;
 	display:block;
 	border-left:4px solid #08f;
 	background-color:#f8f8f8;
