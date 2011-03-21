@@ -1,6 +1,9 @@
 Codescribe::Application.routes.draw do
-
-  resources :codes, :only => [:new, :show, :create]
+  
+  
+  resources :codes, :only => [:new, :show, :create] do
+    resources :notes, :only => [:create, :new]
+  end
 
   root :to => 'site#home'
 

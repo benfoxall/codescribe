@@ -1,0 +1,9 @@
+%dt
+	- note.links.each_with_index do |link,i|
+		%span
+			= link.start_line
+			- if link.start_line != link.end_line
+				&raquo;
+				= link.end_line
+%dd
+	= note.src

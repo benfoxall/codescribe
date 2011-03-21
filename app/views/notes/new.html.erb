@@ -1,0 +1,24 @@
+<%= render @code %>
+
+<hr />
+
+<h2>Add Note</h2>
+<%= form_for @note, :url => code_notes_path do |f| %>
+	<%= debug @note.errors %>
+	<% @note.errors.each do |feild, err| %>
+		<p><%= err%></p>
+	<% end %>
+	<%= f.fields_for :links do |l| %>
+	<div class="link">
+		<%= l.label :start_line, 'line' %>
+		<%= l.text_field :start_line %>
+
+		<%= l.label :end_line, ' to ' %>
+		<%= l.text_field :end_line %>
+	</div>
+	<% end %>
+	
+	<%= f.text_area :src, :rows => 4 %>
+	
+	<%= f.submit 'Add'%>
+<% end %>
