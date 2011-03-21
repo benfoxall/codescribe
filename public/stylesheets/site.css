@@ -68,3 +68,31 @@ code{
 	margin-right:1em;
 	color:#888;
 }
+hr{
+	border:none;
+	border-bottom:1px dotted #08f;
+	margin:2em 0;
+}
+.link{
+	font-size:.9em;
+	margin-bottom:1em;
+}
+.link input{
+	width:20px;
+	display:inline;
+}
+.link .add{
+/*	display:block;*/
+	font-size:.3em;
+	padding:0;
+	width:auto;
+	border:none;
+}
+.field_with_errors{
+	display:inline;
+	color:#fc0000;
+	font-weight:bold;
+}
+.field_with_errors input{
+	border: 1px solid #fc0000;
+}

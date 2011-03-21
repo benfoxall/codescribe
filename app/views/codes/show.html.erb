@@ -1,5 +1,9 @@
-<code>
-<% @code.src.split("\r\n").each_with_index do |line,number| %>
-<span class="line"><span class="number"><%= number + 1 %></span><%= line %>&nbsp;</span>
-<% end %>
-</code>
+<%= render @code %>
+
+<hr />
+
+<%= link_to 'Add Note', new_code_note_path(:code_id => @code.id) %>
+
+<dl>
+<%= render @code.notes %>
+</dl>
